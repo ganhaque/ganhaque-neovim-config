@@ -1,0 +1,2 @@
+-- TODO: try neorg plugin
+-- TODO: have a folder for all plugin configs
