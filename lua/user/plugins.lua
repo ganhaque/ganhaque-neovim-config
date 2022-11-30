@@ -108,9 +108,22 @@ return packer.startup(function(use)
 
   --todo/notetaking
   -- use { "vimwiki/vimwiki", commit = "63af6e72dd3fa840bffb3ebcb8c96970c02e0913"}
+  use {
+    "nvim-neorg/neorg",
+    run = ":Neorg sync-parsers",
+    config = function()
+      require('neorg').setup {
+        -- configuration here
+        -- load = {
+        --   ["core.defaults"] = {},
+        -- }
+      }
+    end,
+    requires = "nvim-lua/plenary.nvim"
+  }
 
   --misc.
-  use({
+  use {
     "kylechui/nvim-surround",
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
     config = function()
@@ -118,7 +131,7 @@ return packer.startup(function(use)
         -- Configuration here, or leave empty to use defaults
       })
     end
-  })
+  }
   -- use { "unblevable/quick-scope", commit = "428e8698347f254d24b248af9f656194a80081e5"}
   use { "ojroques/nvim-bufdel", commit = "a60b3531e5bd56f8602acb4ba7f5b2eeb782d54b"} -- make delete buffer easier (see custom mapping)
   -- try (lack of wiki for nor...)

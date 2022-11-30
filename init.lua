@@ -20,6 +20,7 @@ require "user.whichkey"
 require "user.autocommands"
 require "user.plugins.neo-minimap"
 require "user.plugins.catppuccin"
+require "user.plugins.neorg"
 
 -- Mappings
 require "user.mappings.keymaps"
