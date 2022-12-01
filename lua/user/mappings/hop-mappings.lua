@@ -12,10 +12,10 @@ local function jump_back_to_original_buffer(original_buffer) --{{{
 end --}}}
 
 ----------------------------
--- one liner
+-- TODO: add these shortcut into whichkey
 vim.keymap.set("n", "zf", "<cmd>HopChar1CurrentLine<cr>", { noremap = true, silent = true })
 vim.keymap.set("n", "zw", "<cmd>HopWordCurrentLine<cr>", { noremap = true, silent = true })
-vim.keymap.set("n", "za", "<cmd>HopAnywhereCurrentLine<cr>", { noremap = true, silent = true })
+-- vim.keymap.set("n", "za", "<cmd>HopAnywhereCurrentLine<cr>", { noremap = true, silent = true }) --redundant + conflict with neorg, use zf
 ----------------------------
 vim.keymap.set("n", "zhh", "<cmd>HopLineStart<cr>", { noremap = true, silent = true })
 vim.keymap.set("n", "<Leader>zhh", "<cmd>HopLineStartMW<cr>", { noremap = true, silent = true })
