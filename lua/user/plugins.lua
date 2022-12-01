@@ -96,14 +96,14 @@ return packer.startup(function(use)
   }
   use {
     "folke/todo-comments.nvim",
-    requires = "nvim-lua/plenary.nvim",
-    config = function()
-      require("todo-comments").setup {
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      }
-    end
+    requires = "nvim-lua/plenary.nvim"
+    -- config = function()
+    --   require("todo-comments").setup {
+    --     -- your configuration comes here
+    --     -- or leave it empty to use the default settings
+    --     -- refer to the configuration section below
+    --   }
+    -- end
   }
 
   --todo/notetaking
@@ -111,14 +111,14 @@ return packer.startup(function(use)
   use {
     "nvim-neorg/neorg",
     run = ":Neorg sync-parsers",
-    config = function()
-      require('neorg').setup {
-        -- configuration here
-        -- load = {
-        --   ["core.defaults"] = {},
-        -- }
-      }
-    end,
+    -- config = function()
+    --   require('neorg').setup {
+    --     -- configuration here
+    --     -- load = {
+    --     --   ["core.defaults"] = {},
+    --     -- }
+    --   }
+    -- end,
     requires = "nvim-lua/plenary.nvim"
   }
 
@@ -145,7 +145,7 @@ return packer.startup(function(use)
   -- }
 
   --useless fun
-  use 'eandrju/cellular-automaton.nvim' 
+  use 'eandrju/cellular-automaton.nvim'
 
   -- Cmp 
   use { "hrsh7th/nvim-cmp", commit = "b0dff0ec4f2748626aae13f011d1a47071fe9abc" } -- The completion plugin
