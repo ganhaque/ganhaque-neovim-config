@@ -9,11 +9,11 @@ require('neorg').setup {
         }
       }
     },
-    -- ["core.norg.concealer"] = {
-    --   config = { -- Note that this table is optional and doesn't need to be provided
-    --     -- Configuration here
-    --   }
-    -- }
+    ["core.norg.concealer"] = {
+      config = { -- Note that this table is optional and doesn't need to be provided
+        -- Configuration here
+      }
+    }
   },
   -- ["core.highlights"] = {
   --   config = { -- Note that this table is optional and doesn't need to be provided
@@ -23,7 +23,8 @@ require('neorg').setup {
   ["core.norg.completion"] = {
     config = { -- Note that this table is optional and doesn't need to be provided
       engine = "nvim-cmp"
-    }
+    },
+    engine = "nvim-cmp"
   },
   ["core.integrations.nvim-cmp"] = {
     config = { -- Note that this table is optional and doesn't need to be provided
