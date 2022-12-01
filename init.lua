@@ -21,6 +21,7 @@ require "user.autocommands"
 require "user.plugins.neo-minimap"
 require "user.plugins.catppuccin"
 require "user.plugins.neorg"
+require "user.plugins.todo-comments"
 
 -- Mappings
 require "user.mappings.keymaps"
