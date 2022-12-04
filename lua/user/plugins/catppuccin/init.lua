@@ -44,52 +44,6 @@ require("catppuccin").setup({
   },
   -- color_overrides = { --default
   -- },
-  color_overrides = {
-    mocha = {
-      --comment = ayamir but i prefer default
-      rosewater = "#F5E0DC", --default
-      flamingo = "#F2CDCD", --default
-      pink = "#F5C2E7", --default
-      -- mauve = "#DDB6F2",
-      -- red = "#F28FAD",
-      maroon = "#ffa5c3", --ayamir: #E8A2AF --now: nvchad baby-pink
-      peach = "#F8BD96",
-      yellow = "#FAE3B0",
-      green = "#ABE9B3",
-      -- blue = "#96CDFB",
-      sky = "#89DCEB",
-      teal = "#B5E8E0",
-      -- lavender = "#C9CBFF",
-
-      -- text = "#D9E0EE",
-      -- subtext1 = "#BAC2DE",
-      -- subtext0 = "#A6ADC8",
-      -- overlay2 = "#C3BAC6",
-      -- overlay1 = "#988BA2",
-      -- overlay0 = "#6E6C7E",
-      -- surface2 = "#6E6C7E",
-      surface1 = "#2f2e3e", --prev: #575268 --selection bg
-      -- surface0 = "#302D41",
-
-      -- base = "#1E1E2E",
-      -- mantle = "#1A1826",
-      -- crust = "#161320",
-    },
-  },
-  -- custom_highlights = function (colors)
-  --   return {
-  --     -- Comment = { fg = colors.flamingo }, --example
-  --   }
-  -- end,
-  -- integrations = { --default
-  --   cmp = true,
-  --   gitsigns = true,
-  --   nvimtree = true,
-  --   telescope = true,
-  --   notify = false,
-  --   mini = false,
-  --   -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
-  -- },
   integrations = {
     treesitter = true,
     native_lsp = {
@@ -144,6 +98,53 @@ require("catppuccin").setup({
     overseer = false,
     fidget = true,
   },
+
+  color_overrides = {
+    mocha = {
+      --comment = ayamir but i prefer default
+      rosewater = "#F5E0DC", --default
+      flamingo = "#F2CDCD", --default
+      pink = "#F5C2E7", --default
+      mauve = "#9D7DD8", --prev: #DDB6F2
+      -- red = "#F28FAD",
+      maroon = "#DA4B4A", --ayamir: #E8A2AF --now: nvchad baby-pink --prev: #ffa5c3
+      peach = "#FF9D64", --prev: #F8BD96
+      yellow = "#FAE3B0",
+      green = "#ABE9B3",
+      -- blue = "#96CDFB",
+      sky = "#89DCEB",
+      teal = "#B5E8E0",
+      -- lavender = "#C9CBFF",
+
+      -- text = "#D9E0EE",
+      -- subtext1 = "#BAC2DE",
+      -- subtext0 = "#A6ADC8",
+      -- overlay2 = "#C3BAC6",
+      -- overlay1 = "#988BA2",
+      -- overlay0 = "#6E6C7E",
+      -- surface2 = "#6E6C7E",
+      -- surface1 = "#2f2e3e", --prev: #575268 --selection bg
+      -- surface0 = "#302D41",
+
+      -- base = "#1E1E2E",
+      -- mantle = "#1A1826",
+      -- crust = "#161320",
+    },
+  },
+  -- custom_highlights = function (colors)
+  --   return {
+  --     -- Comment = { fg = colors.flamingo }, --example
+  --   }
+  -- end,
+  -- integrations = { --default
+  --   cmp = true,
+  --   gitsigns = true,
+  --   nvimtree = true,
+  --   telescope = true,
+  --   notify = false,
+  --   mini = false,
+  --   -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+  -- },
 
   --ayamir
   highlight_overrides = {
