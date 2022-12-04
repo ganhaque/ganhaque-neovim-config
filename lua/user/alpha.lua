@@ -122,7 +122,8 @@ local function mru(start, cwd, items_number, opts)
 		end
 	end
 
-	local special_shortcuts = { "a", "s", "d" }
+	-- local special_shortcuts = { "a", "s", "d" }
+	local special_shortcuts = { }
 	local target_width = 35
 
 	local tbl = {}
@@ -205,7 +206,7 @@ local section_mru = {
 		{
 			type = "group",
 			val = function()
-				return { mru(1, cdir, 9) }
+				return { mru(1, cdir, 6) }
 			end,
 			opts = { shrink_margin = false },
 		},
@@ -217,7 +218,7 @@ local buttons = {
 	val = {
 		{ type = "text", val = "--- Quick links ---", opts = { hl = "SpecialComment", position = "center" } },
 		-- { type = "padding", val = 1 },
-   	dashboard.button("S", "  Recent sessions", ":Telescope session-lens search_session <CR>"),
+   	dashboard.button("s", "  Recent sessions", ":Telescope session-lens search_session <CR>"),
 		dashboard.button(
 			"p",
 			" " .. " Find project",
@@ -225,6 +226,8 @@ local buttons = {
 		),
 		-- dashboard.button("f", "  Find file", ":FzfLua files <CR>"),
    	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
+   	dashboard.button("r", "  File frequency", ":Telescope frecency <CR>"),
+
 		-- dashboard.button("F", "  Find text", ":FzfLua live_grep <CR>"),
   	dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
 		dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
