@@ -96,11 +96,14 @@ keymap("i", "zl", "<Right>", opts)
 -- keymap("n", "<eader>rn", "<cmd> set rnu! <CR>", opts) -- toggle relative number
 
 keymap("n", "<ESC>", ":noh<CR>", opts) --no highlight
-keymap("n", "<leader>x", ":BufDel<CR>", opts) --delete buffer (not closing window)
+keymap("n", "<leader>w", ":BufDel<CR>", opts) --delete buffer (not closing window)
 
 -- nvimtree
 keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts) --toggle nvimtree
 keymap("n", "<leader>e", ":NvimTreeFocus<CR>", opts) --focus nvimtree
+
+--Cheatsheet
+keymap("n", "<leader>?", ":Cheatsheet<CR>", opts) --bring up cheatsheet telescope
 
 ---------------------------------------------------------------
 --Nvchad archive
